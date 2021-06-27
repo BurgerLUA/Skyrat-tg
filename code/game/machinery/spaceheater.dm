@@ -28,7 +28,7 @@
 	///The temperature we trying to get to
 	var/target_temperature = T20C
 	///How much heat/cold we can deliver
-	var/heating_power = 40000 //SKYRAT CHANGE: DOUBLES HEATING POWER.
+	var/heating_power = 80000 //SKYRAT CHANGE: DOUBLES HEATING POWER
 	///How efficiently we can deliver that heat/cold (higher indicates less cell consumption)
 	var/efficiency = 20000
 	///The amount of degrees above and below the target temperature for us to change mode to heater or cooler
