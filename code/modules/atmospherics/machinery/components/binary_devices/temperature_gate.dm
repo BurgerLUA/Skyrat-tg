@@ -59,14 +59,14 @@
 
 	if(!inverted)
 		if(air1.temperature < target_temperature)
-			if(air1.release_gas_to(air2, air1.return_pressure()))
+			if(air1.release_gas_to(air2,air1.return_pressure(),2)) //SKYRAT CHANGE, ADDS RATE MULTIPLIER.
 				update_parents()
 				is_gas_flowing = TRUE
 		else
 			is_gas_flowing = FALSE
 	else
 		if(air1.temperature > target_temperature)
-			if(air1.release_gas_to(air2, air1.return_pressure()))
+			if(air1.release_gas_to(air2,air1.return_pressure(),2)) //SKYRAT CHANGE, ADDS RATE MULTIPLIER.
 				update_parents()
 				is_gas_flowing = TRUE
 		else
